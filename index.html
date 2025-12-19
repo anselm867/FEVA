@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    html, body {
+  height: 100%;
+}
+
+.heroSwiper {
+  height: 100vh;
+}
+
+.hero-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+  </style>
+</head>
+<body>
+  <!-- FULL SCREEN HERO SWIPER -->
+<div class="swiper heroSwiper">
+  <div class="swiper-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="swiper-slide hero-slide"
+      style="background-image: url('images/IMG-20251212-WA0122.jpg');">
+      <div class="hero-overlay">
+        <div class="container text-center text-lg-start text-white">
+          <h1 class="display-1 fw-bold text-center">Elevate Your Style</h1>
+          <p class="lead mb-4 fs-5 text-center">Discover premium fashion for every moment.</p>
+          <p class="text-center"><a class="btn btn-light btn-lg me-2" href="home.html">Get Started!</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide hero-slide"
+      style="background-image: url('images/Gemini_Generated_Image_25xdo625xdo625xd.png');">
+      <div class="hero-overlay">
+        <div class="container text-center text-lg-start text-white">
+          <h1 class="display-1 fw-bold text-center">Fresh Looks</h1>
+          <p class="lead mb-4 fs-5 text-center">Redefine your wardrobe today.</p>
+          <p class="text-center"><a class="btn btn-light btn-lg me-2" href="home.html">Get Started!</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide hero-slide"
+      style="background-image: url('images/IMG-20251212-WA0146.jpg');">
+      <div class="hero-overlay">
+        <div class="container text-center text-lg-start text-white">
+          <h1 class="display-1 fw-bold text-center">Premium Quality</h1>
+          <p class="lead mb-4 fs-5 text-center">Comfort meets confidence.</p>
+          <p class="text-center"><a class="btn btn-light btn-lg" href="shop.html">Shop Now</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  new Swiper(".heroSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
+    effect: "fade",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+  });
+</script>
+
+</body>
+</html>
